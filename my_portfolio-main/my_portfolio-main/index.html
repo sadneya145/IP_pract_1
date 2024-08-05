@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background: linear-gradient(#D9D9D9,rgb(186, 176, 176),#091B25);
+    }
+    .header{
+        position: relative;
+        top:40px;
+        margin-left: 50px;
+        width: 90vw;
+        height: 80px;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        border-top-left-radius: 30px;
+        /* border-top-right-radius: 15px; */
+    }
+    .header a{
+        margin-left: 0px;
+        font-family: 'Playfair Display';
+        text-decoration: none;
+    }
+    .header img{
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+    }
+    .header button {
+        background-color: #f3f3ed;
+        color: black;
+        margin-left: 70px;
+        height: 40px;
+        width: 80px;
+        border-radius: 8px;
+        opacity: 0.9;
+    }
+    .header button:hover {
+        background-color: rgb(255, 255, 255) ;
+        color: #000000; 
+    
+    }
+    
+    .header button:active {
+        height: 50px;
+        width: 90px;
+        font-size: 20px;
+    }
+    
+    .logo{
+        font-size: 25px;
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    .navbar a{
+        margin-left: 75px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 100;
+        font-size: 18px;
+        font-family: 'Nunito Sans';
+    }
+    #home{
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff; 
+    }
+    .navbar a:active,
+    .navbar a.active {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .content{
+        align-content: center;
+        justify-content:space-between;
+        background-color: rgb(186, 176, 176);
+        margin-top: 44px;
+        margin-left: 50px;
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        color: #000000;
+    }
+    
+    .right{
+        margin-top: 70px;
+        margin-left: 60px;
+        align-content: center;
+        height: 50vh;
+        width: 40vw;
+        
+    
+    }
+    
+.btn button {
+    background-color: #f3f3ed;
+    color: #000000;
+    border: 3px solid black;
+    height: 35px;
+    width: 90px;
+    border-radius: 8px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+    
+.left{
+    float:right;
+   /* background-color: black; */
+   margin-top: 50px;
+    height: 60vh;
+    width: 50vw;
+}
+
+.left img{
+    height: 60vh;
+    width: 30vw;
+    margin-left: 100px;
+}
+
+.skills{
+    position: relative;
+    background-color: #fff;
+    padding:70px;
+    width: 90vw;
+    margin-left: 50px;
+    height: 100vh;
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; 
+    
+} 
+
+.skills img{
+    margin-top: 70px;
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.skills a{
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact{
+    background-color: #fff;
+    width: 90vw;
+    margin-left: 50px;
+    height: 70vh;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.contact img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px; 
+    align-items: center;
+}
+
+#img1{
+ margin-top: 7px;
+}
+
+.contact a{
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: black;
+    line-height: 24px; 
+}
+
+hr{
+    width: 90vw;
+    margin-left: 50px;
+    background-color: #000000;
+    
+}
+</style>
+</head>
+<body>
+<div class="homes">
+<header class="header">
+    <img src="./sample_img.png" alt="this is img">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+        <a href="#" id="home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="https://github.com/sadneya145">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<div class="content">
+    <div class="right">
+        <h1>My name is Sadneya Samant </h1>
+        <h3>I am a 3rd year student</h3>
+        <div class="btn">
+            <button>Hire me <img src="./arrow.png"/></button>
+        </div>
+    </div>
+    <div class="left">
+        <img src="./sample_img.png" alt="this is img">
+    </div>
+    </div>
+</div>
+<hr/>
+<div id='skills'class="skills">
+    <h1><u>Skills</u></h1>
+    <a><img src="./app-development.png" alt=""><br/>Web devlopment</a>
+    <!-- <img src="./figma.png" alt="">
+    <img src="./physics.png" alt=""> -->
+    <a><img src="./python.png" class="imp"alt=""><br/>Python</a>
+    <a><img src="./problem-solving-skills.png" class="imps" alt=""><br/>Problem-Solving</a>
+</div>
+<hr/>
+<div  id="contact"class="contact">
+    <h3>For More Info:</h3>
+    <a href="mailto:sadneya14@gmail.com">
+    <img src="./gmail.png" id="img1" alt="gmail acc"/>
+    Gmail</a>
+    <a href="https://github.com/sadneya145">
+    <img src="./github-sign.png" id="img1" alt="github acc"/>
+    Github</a>
+    <a>
+    <img src="./instagram.png" id="img1" alt="insta acc"/>
+    Instagram
+    </a>
+    <a href="https://www.linkedin.com/in/sadneya-samant-0a4709290">
+        <img src="./linkedin.png" id="img1" alt="LinkedIn profile"/>
+        LinkedIn
+    </a>    
+    <a>
+    <img src="./smartphone-call.png" id="img1"alt="phone no"/>
+    +91 9619434492
+    </a>
+</div>
+</body>
+</html>
